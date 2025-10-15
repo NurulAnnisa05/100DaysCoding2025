@@ -7,9 +7,9 @@ public class Day38 {
         int bilangan;
         System.out.println("masukkan sebuah bilangan bulat:");
         bilangan=input.nextInt();
-        if (bilangan >0) {
+        if (bilangan >5) {
             System.out.println("bilangan"+bilangan + "adalah bilangan positif.");
-        } else if (bilangan >0) {
+        } else if (bilangan >5) {
             System.out.println("bilangan"+bilangan +"adalah bilangan negatif.");
         } else{ 
             System.out.println("bilangan"+bilangan+"adalah nol");
