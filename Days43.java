@@ -1,33 +1,35 @@
-import java.util.Scanner;
+import java.util.Scanner; 
+
 public class Day43 {
     public static void main(String[] args) {
-        Scanner input=new Scanner (System.in);
-        System.out.println("masukkan angka");
-        int angka = input.nextInt(); 
-        int angkaCek=15;
+    
+        Scanner input = new Scanner(System.in);
 
-        System.out.println("--- Program Cek Kelipatan untuk Angka Tunggal ---");
-        System.out.println("Angka yang dicek: " + angkaCek);
-
+        System.out.println("--- Program Cek Kelipatan 3, 5, dan Keduanya (Angka Tunggal) ---");
+        System.out.print("Masukkan satu bilangan bulat: ");
 
         
+        int angkaCek = input.nextInt();
+
+        System.out.println("\nHasil Pengecekan Angka " + angkaCek + ":");
+
         
         if (angkaCek % 3 == 0 && angkaCek % 5 == 0) {
-            System.out.println("Hasil: Kelipatan 3 dan 5 (FizzBuzz)");
+            System.out.println("-> Kelipatan 3 dan 5 (FizzBuzz)");
         } 
         
         else if (angkaCek % 3 == 0) {
-            System.out.println("Hasil: Kelipatan 3 (Fizz)");
+            System.out.println("-> Kelipatan 3 (Fizz)");
         } 
         
         else if (angkaCek % 5 == 0) {
-            System.out.println("Hasil: Kelipatan 5 (Buzz)");
+            System.out.println("-> Kelipatan 5 (Buzz)");
         } 
-        
+    
         else {
-            System.out.println("Hasil: Bukan kelipatan 3 atau 5");
+            System.out.println("-> Bukan kelipatan 3 atau 5");
         }
         
-        System.out.println("------------------------------------------------");
+        System.out.println("------------------------------------------------------------------");
     }
 }
