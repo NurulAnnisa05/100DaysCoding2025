@@ -1,35 +1,30 @@
-public class Day43{
+public class Day43 {
     public static void main(String[] args) {
+    
+        int angkaCek = 15; 
+
+        System.out.println("--- Program Cek Kelipatan untuk Angka Tunggal ---");
+        System.out.println("Angka yang dicek: " + angkaCek);
+
+
         
-        int batasAtas = 15;
-        int i = 1;
-
-        System.out.println("--- Program Cek Kelipatan 3, 5, dan Keduanya (Menggunakan WHILE) ---");
-
         
-        while (i <= batasAtas) {
-            System.out.print("Angka " + i + ": ");
-
-           
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("Kelipatan 3 dan 5 (FizzBuzz)");
-            }
-          
-            else if (i % 3 == 0) {
-                System.out.println("Kelipatan 3 (Fizz)");
-            }
-            
-            else if (i % 5 == 0) {
-                System.out.println("Kelipatan 5 (Buzz)");
-            }
-            
-            else {
-                System.out.println("Bukan kelipatan 3 atau 5");
-            }
-
-           
-            i++;
+        if (angkaCek % 3 == 0 && angkaCek % 5 == 0) {
+            System.out.println("Hasil: Kelipatan 3 dan 5 (FizzBuzz)");
+        } 
+        
+        else if (angkaCek % 3 == 0) {
+            System.out.println("Hasil: Kelipatan 3 (Fizz)");
+        } 
+        
+        else if (angkaCek % 5 == 0) {
+            System.out.println("Hasil: Kelipatan 5 (Buzz)");
+        } 
+        
+        else {
+            System.out.println("Hasil: Bukan kelipatan 3 atau 5");
         }
-        System.out.println("-----------------------------------------------------------------");
+        
+        System.out.println("------------------------------------------------");
     }
 }
