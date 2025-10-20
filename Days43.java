@@ -1,7 +1,10 @@
+import java.util.Scanner;
 public class Day43 {
     public static void main(String[] args) {
-    
-        int angkaCek = 15; 
+        Scanner input=new Scanner (System.in);
+        System.out.println("masukkan angka");
+        int angka = input.nextInt(); 
+        int angkaCek=15;
 
         System.out.println("--- Program Cek Kelipatan untuk Angka Tunggal ---");
         System.out.println("Angka yang dicek: " + angkaCek);
