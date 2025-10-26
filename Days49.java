@@ -3,7 +3,7 @@ public class Day49 {
         int angka = 7;
         String hasil;
 
-         nilai_jika_salah;
+         
         hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
 
         System.out.println("Angka " + angka + " adalah: " + hasil);
